@@ -161,6 +161,8 @@ nav a:hover{
 
 
 
+
+
 .hero-blog1{
     min-height:100vh;
     display:flex;
@@ -388,6 +390,12 @@ section{
     gap:25px;
 }
 
+.card-griddd{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
 .card{
     background:white;
     padding:30px;
@@ -396,7 +404,20 @@ section{
     transition:.4s;
 }
 
+.cardd{
+    background:whitesmoke;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 40px 120px rgba(14, 209, 56, 0);
+    transition:.4s;
+    border: 3px solid var(--primary, #007bff);
+}
+
 .card:hover{
+    transform:translateY(-10px);
+}
+
+.cardd:hover{
     transform:translateY(-10px);
 }
 
@@ -1040,6 +1061,54 @@ gramatiku, cestování i pracovní využití italštiny.
 </section>
 
 
+
+
+
+
+
+
+
+
+<section class="hidden">
+
+<div class="container">
+
+<h2 class="section-title">Recenze studentů</h2>
+
+<div class="card-griddd">
+
+<div class="cardd">
+<p class="text-do-blogu2"><strong>Agáta ⭐⭐⭐⭐⭐</strong></p>
+<p>Ondra je velice trpělivý. Mohu jen doporučit!!</p>
+</div>
+
+<div class="cardd">
+<p class="text-do-blogu2"><strong>Vojtěch ⭐⭐⭐⭐⭐</strong></p>
+<p>Ondřej aplikuje přátelský a milý přístup, díky kterému jsou hodiny s ním zábavné a efektivní.</p>
+</div>
+
+<div class="cardd">
+<p class="text-do-blogu2"><strong>Helena ⭐⭐⭐⭐⭐</strong></p>
+<p>Perfektní! Ondra je skvělý, vše pěkně vysvětlí.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section id="Co se dělá na mých lekcích">
   <div class="containerr">
     <h2 class="section-title">V čem jsou mé lekce jiné?</h2>
@@ -1438,6 +1507,17 @@ window.addEventListener('resize', () => updateSlider(false));
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 function openArticleFromUrl() {
   // 1. Zjistíme, jaký hash (křížek) je aktuálně v URL adrese
   const currentHash = window.location.hash;
@@ -1488,6 +1568,16 @@ window.addEventListener('hashchange', openArticleFromUrl);
       }
     });
   });
+
+
+
+
+
+
+
+
+
+
 
 
 
