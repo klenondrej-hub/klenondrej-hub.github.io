@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- 1. Automatické přesměrování (za 0 vteřin) na váš Brevo odkaz -->
+    <meta http-equiv="refresh" content="0; url=https://sibforms.com">
+    <title>Přesměrování...</title>
+    <!-- 2. Záložní JavaScript pro případ, že by prohlížeč ignoroval meta refresh -->
+    <script type="text/javascript">
+        window.location.href = "https://sibforms.com";
+    </script>
+</head>
+<body>
+    <!-- 3. Text pro lidi, pokud by se přesměrování seklo -->
+    <p>Pokud nebudete automaticky přesměrováni, <a href="https://sibforms.com">klikněte prosím sem</a>.</p>
+</body>
+</html>
